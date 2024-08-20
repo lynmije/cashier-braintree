@@ -287,6 +287,7 @@ trait Billable
             array_replace_recursive([
                 'customerId' => $customer->id,
                 'paymentMethodNonce' => $token,
+                // 'paymentMethodToken' => $token,
                 'options' => [
                     'makeDefault' => true,
                     'verifyCard' => true,
